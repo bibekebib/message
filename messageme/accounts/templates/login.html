@@ -1,0 +1,8 @@
+<form method="POST">
+    {% csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="login">
+    <b>Need have an account?
+    </b>
+    <a href="{% url 'signup'%}">Sign Up.</a>
+</form>
