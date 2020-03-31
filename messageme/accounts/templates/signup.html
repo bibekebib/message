@@ -1,18 +1,53 @@
-<html>
-    <title>Sign Up</title>
-    <form method="post">
-      {% if form.errors %}
-<p>Make sure you typed everything correctly. Please try again.</p>
-{% endif %}
-        {% for field in form  %}
-        {{field.label_tag}}
-          {{field}}
-          <br>
-        {% endfor %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Alata|Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static "css/signup.css" %}">
+    <meta charset="utf-8">
+    <title>Signup</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="#">Logo</a></h1>
+      <ul>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
 
-        <!-- {{form.as_p}} -->
-        {% csrf_token %}
-       
+
+    </div>
+    <div class="container">
+
+      <div class="form">
+
+        <i class="fa fa-user fa-4x"></i><h3>Signup</h3>
+    <form method="post">
+      {% csrf_token %}
+      {% if form.errors %}
+    <p>Make sure you typed everything correctly. Please try again.</p>
+      {% endif %}
+
+
+
+          {{form.username}}
+          {{form.email}}
+          {{form.password1}}
+          {{form.password2}}
+          <br>
+
         <button type="submit">Signup</button>
     </form>
+
+  </div>
+  </div>
+
+  <div class="extra">
+    <img src="{%static "images/rename.png"%}">
+  </div>
+
+  </body>
 </html>

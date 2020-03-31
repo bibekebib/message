@@ -1,0 +1,153 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+
+html{
+  height: 100%;
+  border:2px solid black;
+}
+
+.header{
+  padding-bottom: 45px;
+  height:8vh;
+}
+
+.header ul li{
+  list-style-type: none;
+  display: inline-block;
+
+}
+
+.header ul a{
+  padding-right: 30px;
+  word-spacing: 30px;
+  letter-spacing: 0.05em;
+  color: rgb(204, 214, 246);
+  color:brown;
+  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+.header h1 a{
+  float: left;
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #e5e5e5;
+  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  text-decoration: none;
+  color:brown;
+
+}
+
+.header ul{
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+
+}
+
+.header ul li{
+  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+.header ul li a{
+  text-decoration: none;
+
+}
+
+
+body{
+  background:#FF8000;
+
+}
+
+.container{
+  float:left;
+  width:49%;
+  }
+
+.form{
+    margin:50px;
+    padding-top: 5%;
+    height:40vh;
+    padding-left: 25%;
+  }
+
+.form input{
+    border: none;
+    line-height: 4vh;
+    background-color:transparent;
+    margin-top: 15px;
+    width:60%;
+    border-bottom: 1px solid #E0FFFF;
+    color:#E0FFFF;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+  }
+
+.extra{
+  float:right;
+  margin-top: 6%;
+  border-left:5px solid red;
+  width: 50%;
+  animation-name:myanimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  position: relative;
+
+}
+
+.form button{
+  margin-top: 20px;
+  width:60%;
+  background-color: #E0FFFF;
+  height: 5vh;
+  border-radius: 4px;
+  color:brown;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.form i{
+  margin-left: 20%;
+  color: #E0FFFF;
+}
+
+.extra img{
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.form h3{
+  margin-left: 17%;
+  font-weight: bold;
+  color: #E0FFFF;
+  margin-bottom: 15%;
+  font-family: 'Alata', sans-serif;
+  letter-spacing: 2px;
+
+}
+
+
+.form button:hover{
+  cursor: pointer;
+  opacity: 0.6;
+  transition-duration: 0.8s;
+  color:brown;
+}
+
+@media only screen and (max-width: 600px){
+   .extra{display: none;}
+}
